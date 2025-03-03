@@ -1,42 +1,64 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
+/* GENERAL */
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    margin: 0 auto;
+    font-family: "Montserrat", serif;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1,
+h2,
+h3 {
+    margin: 0 auto;
+    color: #025194;
+    font-weight: 800;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h2 {
+    font-weight: 700;
+    margin: 2% auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h3 {
+    font-weight: 600;
+    margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+    text-align: center;
+
+    & a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 800;
+        background-color: #025194;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 1.9rem;
+        border: none;
+    }
+
+    & a:visited {
+        color: #fff;
+    }
+
+    & a:link {
+        color: #fff;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    .h1Title {
+        font-size: 5vw;
+    }
+
+    .h2Title {
+        font-size: 2.5vw;
+    }
+
+    .h3Title {
+        font-size: 1.5vw;
+    }
 }
