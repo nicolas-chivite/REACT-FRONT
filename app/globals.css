@@ -1,23 +1,23 @@
-/* GENERAL */
-body {
-    margin: 0 auto;
+* {
     font-family: "Montserrat", serif;
 }
 
-h1,
-h2,
-h3 {
+body {
+    margin: 0 auto;
+}
+
+.h1Title, .h2Title, .h3Title {
     margin: 0 auto;
     color: #025194;
     font-weight: 800;
 }
 
-h2 {
+.h2Title {
     font-weight: 700;
     margin: 2% auto;
 }
 
-h3 {
+.h3Title {
     font-weight: 600;
     margin: 0 auto;
 }

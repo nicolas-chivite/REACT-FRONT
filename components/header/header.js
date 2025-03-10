@@ -1,36 +1,40 @@
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
+
+import style from "./header.module.css";
 
 const Header = () => {
   return (
     <>
-      <nav id="header">
-        <div class="logo-menu">
-          <a href="../home/home.html">
+      <nav id={style.header}>
+        <div className={style.logoMenu}>
+          <Link href={"/"}>
             <Image
               src="/images/logo-menu.png"
-              width={100}
-              height={100}
+              width={398}
+              height={96}
               alt="logo EMISA"
             />
-          </a>
+          </Link>
         </div>
 
-        <div class="head_container">
-          <div class="menu">
-            <div class="menus">
-              <a href="../home/home.html">
-                <span class="underline">ACCUEIL</span>
-              </a>
+        <div className={style.head_container}>
+          <div className={style.menu}>
+            <div className={style.menus}>
+              <Link href={"/"}>
+                <span className={style.underline}>ACCUEIL</span>
+              </Link>
+              <a href="../"></a>
             </div>
-            <div class="menus">
-              <a href="../directory/directory.html">ANNUAIRE</a>
+            <div className={style.menus}>
+              <Link href={"/annuaire"}>ANNUAIRE</Link>
             </div>
-            <div class="menus">
-              <a href="../contact/contact.html">CONTACT</a>
+            <div className={style.menus}>
+              <Link href={"/contact"}>CONTACT</Link>
             </div>
           </div>
 
-          <div class="network">
+          <div className={style.network}>
             <a href="https://www.facebook.com/CCIFormationsBayonne.Emisa/">
               <Image
                 src={"/images/facebook.svg"}

@@ -1,4 +1,7 @@
-/* BANNIERE */
+.banner {
+    position: static;
+}
+
 .imgBanner {
     background-position: 25% top;
     position: absolute;
@@ -9,6 +12,7 @@
 
 .title_banner {
     padding: 5% 5%;
+    position: relative;
 }
 
 #baseline {
@@ -55,6 +59,11 @@
         font-size: 4vw;
     }
 
+    .imgBanner {
+        width: auto;
+        height: 45%;
+    }
+
     .title_banner {
         text-align: center;
         background: #ffffff70;
@@ -67,6 +76,11 @@
 @media (min-width: 706px) and (max-width: 1200px) {
     .title_banner {
         padding-left: 45vw;
+    }
+
+    .imgBanner {
+        width: 125%;
+        height: auto;
     }
 }
 

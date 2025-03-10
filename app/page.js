@@ -8,8 +8,8 @@ const Home = () => {
       <Header />
       <div className={style.container}>
         <div className={style.banner}>
+            <Image src="/images/bandeau-home.png" width={1920} height={562} className={style.imgBanner} alt="Bannière du site" />
           <div className={style.title_banner}>
-            <Image src="/images/bandeau-home.png" fill={true} className={style.imgBanner} alt="Bannière du site" />
             <h1 className={style.h1Title}>EMISA</h1>
             <h2 className={style.h2Title}>Le centre de formation</h2>
             <h3 className={style.h3Title}>Chambre de Commerce et d’Industrie Bayonne Pays Basque</h3>
