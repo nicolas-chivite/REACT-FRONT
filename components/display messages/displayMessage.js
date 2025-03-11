@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Refresher from "../Refresher/refresher";
 
 const Messages = () => {
   const [data, setData] = useState([]);
@@ -6,9 +7,10 @@ const Messages = () => {
     fetch("http://127.0.0.1:8000/messages")
       .then((response) => response.json())
       .then((data) => setData(data));
-  }, [setData]);
+  }, [data] );
   return (
     <div>
+      <Refresher />
       {data.messages && data.messages.length > 0 ? (
         data.messages.map((message) => {
             return (
