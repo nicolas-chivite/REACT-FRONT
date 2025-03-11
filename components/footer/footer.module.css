@@ -1,98 +1,70 @@
-footer {
+.footer {
     background-color: #1C9CDA;
     display: flex;
-    justify-content: start;
-    overflow: hidden;
+    height: 3rem;
+    justify-content: space-evenly;
 }
 
-#logo-footer {
+.logoFooter {
+    display: flex;
+    align-items: center;
     padding: 1.5%;
 }
 
-.menu-footer {
+.menuFooter {
     align-content: center;
     color: white;
     margin: 0.4rem;
-
-    & a {
-        font-size: 1.5vw;
-        text-decoration: none;
-    }
-
-    & a:visited {
-        color: #fff;
-    }
-
-    & a:link {
-        color: #fff;
-    }
 }
+
+.linkFooter {
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.linkFooter:visited {
+    color: #fff;
+}
+
+.linkFooter:link {
+    color: #fff;
+}
+
 
 @media (max-width: 705px) {
 
-    .h1Title {
-        font-size: 10vw;
-    }
-
-    .h2Title {
-        font-size: 5vw;
-    }
-
-    .h3Title {
-        font-size: 4vw;
-    }
-
-    #header {
-        align-items: center;
-        padding: 0.5rem;
-    }
-
-    .logo-menu {
-        margin: 0% auto;
+    .footer {
         display: flex;
-        justify-content: center;
-
-        & a {
-            display: contents;
-
-            & img {
-                width: 85%;
-            }
-        }
+        height: auto;
     }
 
-    .head_container {
-        display: grid;
-        margin: 0 auto;
-    }
+    .linkFooter {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5vw;
 
-    .title_banner {
-        text-align: center;
-        background: #ffffff70;
-    }
-
-    footer {
-        flex-direction: column;
-
-        & .menu-footer a {
-            display: flex;
-            justify-content: center;
-            font-size: 5vw;
-        }
-
-        & img {
-            width: 10vw;
-            margin: 0 auto;
-        }
     }
 }
 
-
-
-
 @media (min-width: 706px) and (max-width: 1200px) {
+    .footer {
+        height: auto
+    }
+
+    .linkFooter {
+        font-size: 2vw;
+        text-decoration: none;
+    }
 }
 
 
 @media (min-width: 1201px) {
+    .footer {
+        height: auto
+    }
+
+    .linkFooter {
+        font-size: 1vw;
+        text-decoration: none;
+    }
 }

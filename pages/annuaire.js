@@ -1,5 +1,14 @@
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
+
 const Contact = () => {
-  return <div>Annuaire</div>;
+  return (
+    <>
+    <Header />
+    <Footer />
+    </>
+  );
 };
 
 export default Contact;

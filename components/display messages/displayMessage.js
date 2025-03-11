@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
-import Refresher from "../Refresher/refresher";
 
 const Messages = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch("http://127.0.0.1:8000/messages")
       .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((resp) => setData(resp.messages));
   }, [data] );
+  
   return (
     <div>
-      <Refresher />
-      {data.messages && data.messages.length > 0 ? (
-        data.messages.map((message) => {
+      {data.length > 0 ? (
+        data.map((message) => {
             return (
           <div key={message.id}>
             <p>

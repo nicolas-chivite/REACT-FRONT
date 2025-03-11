@@ -24,6 +24,8 @@ const onSubmit = async (event) => {
 
   alert("Message envoyée avec succès !");
   event.target.reset();
+
+  
 };
 
 const ContactForm = () => {
