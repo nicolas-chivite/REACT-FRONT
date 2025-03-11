@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Messages = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/messages")
+    fetch("http://127.0.0.1:8080/messages")
       .then((response) => response.json())
       .then((resp) => setData(resp.messages));
   }, [data] );

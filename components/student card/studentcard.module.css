@@ -1,0 +1,144 @@
+.imgContainer {
+    display: flex;
+    width: 146px;
+    height: 150px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.studPic{
+    border-top-left-radius: 1rem;
+    position: relative;
+
+}
+
+.search {
+    margin: auto 15%;
+
+    & h2 {
+    color: #025194;
+    font-weight: 800;
+    }
+
+    & button{
+        background-color: #025194;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        border-radius: 1.9rem;
+        border: none;
+        width: 15rem;
+        height: 4rem;
+    }
+
+    & #courseSelect, #yearSelect{
+        appearance: none;
+        box-shadow: #00000071 1px 1px 10px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        border-radius: 1.9rem;
+        border: none;
+        width: fit-content;
+        min-width: 15rem;
+        height: 4rem;
+    }
+
+    & #yearSelect{
+        margin: auto 1.5rem;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.student {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 45px;
+    margin: 5% auto;
+}
+
+.studSheet{
+    display: flex;
+    position : relative;
+    width: 625px;
+    height: 150px;
+    border-radius: 25px 25px 25px 0px;
+    border-color: #025194;
+    box-shadow: #00000071 1px 1px 6px;
+}
+
+.studCard{
+    padding-left: 15px;
+}
+
+.id {
+    & #stud-id{
+        font-size: 25px;
+        font-weight: 700;
+
+        & img {
+            justify-content: space-evenly;
+            width: 39px;
+            height: 27px;
+        }
+    }
+    & .yearType {
+        font-weight: 700;
+    }
+}    
+
+.heart {
+    position: absolute;
+    width: 24px;
+    right: 18px;
+    top: 14px;
+}
+
+.btnStud button{
+    /* background-color: #025194; */
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 35px;
+    color: #fff;
+    width: 222px;
+    height: 43px;
+    position: absolute;
+    left: 403px;
+    top: 108px;
+    border-radius: 11px 0px 27px 0px;
+    border: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 20%;
+    margin: 2% auto;
+
+    /* & img {
+        background-color: #474747;
+        width: 55px;
+        height: 45px;
+        border-radius: 2px;
+    } */
+
+    & div {
+        background-color: #474747;
+        color: #fff;
+        border-radius: 2px;
+        width: 45px;
+        height: 35px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        align-content: center;
+        border-radius: 10px;
+    }
+}
