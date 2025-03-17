@@ -1,14 +1,10 @@
-import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
+"use client";
 import StudentsCards from "@/components/student card/studentCard";
-
 
 const Contact = () => {
   return (
     <>
-    <Header />
-    <StudentsCards />
-    <Footer />
+      <StudentsCards />
     </>
   );
 };

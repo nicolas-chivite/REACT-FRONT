@@ -1,12 +1,13 @@
+"use client";
 import { useEffect, useState } from "react";
 
 const Messages = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:8080/messages")
+    fetch("http://127.0.0.1:8000/api/messages")
       .then((response) => response.json())
-      .then((resp) => setData(resp.messages));
-  }, [data] );
+      .then((resp) => setData(resp.member));
+  }, [] );
   
   return (
     <div>
@@ -15,20 +16,19 @@ const Messages = () => {
             return (
           <div key={message.id}>
             <p>
-              <strong>Expéditeur:</strong> {message.first_name}{" "}
-              {message.last_name}
+              <strong>Expéditeur:</strong> {message.expeditor}
+            </p>
+            <p>
+              <strong>Objet :</strong> {message.object}
             </p>
             <p>
               <strong>Contenu du message :</strong> {message.content}
             </p>
-            <p>
-              <strong>Email:</strong> {message.email}
-            </p>
-            <p>
+            {/* <p>
               <strong>Téléphone:</strong> {message.phone}
-            </p>
+            </p> */}
             <p>
-              <strong>Envoyer le :</strong> {message.created_at}
+              <strong>Envoyé le :</strong> {message.createdAt}
             </p>
           </div>
         )})

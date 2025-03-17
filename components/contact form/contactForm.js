@@ -5,13 +5,13 @@ const onSubmit = async (event) => {
 
   const formData = {
     content: event.target.content.value,
-    firstName: event.target.firstName.value,
-    lastName: event.target.lastName.value,
-    email: event.target.email.value,
-    phone: event.target.phone.value,
+    expeditor: event.target.expeditor.value,
+    object: event.target.object.value,
+    // email: event.target.email.value,
+    // phone: event.target.phone.value,
   };
 
-  const url = "http://localhost:8000/messages";
+  const url = "http://127.0.0.1:8000/admin/message/new/{student.id}";
 
   const response = await fetch(url, {
     method: "POST",
@@ -32,15 +32,15 @@ const ContactForm = () => {
   return (
     <div className="form">
       <form className="contactForm" onSubmit={onSubmit}>
-        <label htmlFor="firstName">Prénom</label>
-        <input type="text" name="firstName"></input>
-        <label htmlFor="lastName">Nom</label>
-        <input type="text" name="lastName"></input>
-        <label htmlFor="email">Email</label>
+        <label htmlFor="expeditor">Expéditeur</label>
+        <input type="text" name="expeditor"></input>
+        <label htmlFor="object">Objet</label>
+        <input type="text" name="object"></input>
+        {/* <label htmlFor="email">Email</label>
         <input type="email" name="email"></input>
         <label htmlFor="phone">Téléphone</label>
-        <input type="text" name="phone"></input>
-        <label htmlFor="message">Message</label>
+        <input type="text" name="phone"></input> */}
+        <label htmlFor="content">Message</label>
         <input type="text" name="content"></input>
         <button>Envoyer</button>
       </form>

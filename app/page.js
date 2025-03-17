@@ -1,12 +1,10 @@
 import Image from "next/image"
 import style from "./page.module.css"
-import Header from "@/components/header/header"
-import Footer from "@/components/footer/footer";
 
 const Home = () => {
   return (
     <>
-      <Header />
+
       <div className={style.container}>
         <div className={style.banner}>
             <Image src="/images/bandeau-home.png" width={1920} height={562} className={style.imgBanner} alt="Bannière du site" />
@@ -39,7 +37,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
+
     </>
   );
 };

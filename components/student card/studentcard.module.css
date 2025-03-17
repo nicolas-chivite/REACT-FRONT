@@ -10,7 +10,8 @@
 .studPic{
     border-top-left-radius: 1rem;
     position: relative;
-
+    width: 9rem;
+    height: 10rem;
 }
 
 .search {
@@ -101,7 +102,7 @@
 }
 
 .btnStud button{
-    /* background-color: #025194; */
+    background-color: #025194;
     font-size: 20px;
     font-weight: 700;
     text-align: left;
@@ -114,6 +115,10 @@
     top: 108px;
     border-radius: 11px 0px 27px 0px;
     border: none;
+}
+
+.pictoFiche {
+    margin-left: 1rem;
 }
 
 .nav{
